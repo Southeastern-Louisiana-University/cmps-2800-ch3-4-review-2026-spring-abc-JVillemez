@@ -5,7 +5,7 @@ public class Chapter3Review {
 
     // --- 1. INPUT & SANITIZATION ---
 
-    // Remove whitespace from ends (Chapter 4.4)
+
 
     // --- 2. STRING EXTRACTION (Chapter 4.4) ---
     // We need to find the positions of the hyphens to split the string.
