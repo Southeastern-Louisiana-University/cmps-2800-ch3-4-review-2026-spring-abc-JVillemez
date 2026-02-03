@@ -14,6 +14,10 @@ public class Main {
         System.out.println("Grading Program.");
         System.out.println("Provides Letter grade given number grade.");
         System.out.println("Please input a number grade: "); //We need to get this number grade into our scanner.
+        numToLetter(); //Because the method is called here, everything is displayed in order, so what I have in the method is also in order.
+        //Here we are calling out num method. Can just have it by itself this way because it's static.
+
+
         double numberGrade;
 
 
@@ -37,11 +41,20 @@ public class Main {
         else if (numberGrade >= 60){
             System.out.println("You get a D");
         }
+        else if (numberGrade <60 && numberGrade >= 0){
+            System.out.println("You get an F");
+        }
         else{
             System.out.println("I can't give your letter grade");
         }
 
 
+    } // Here is where we'll start to make a method. Simple one for now. Want to crate this new one outside of the scope of our OG one.
+    //public is everything can see it. Static means you don't have to create in instance of the class to use the method. void means no return value.
+
+    // In order to use the method, we need to call it.
+    public static void numToLetter(){
+        System.out.println("Go Lions inside numToLetter");
     }
 }
 
@@ -50,3 +63,5 @@ public class Main {
 //Also create a method that will take all of that, put it in a method, and call it into a main method. Done it before but totally forgot how to.
 
 // 2/3/26 keeping it going to input more letter grades as long as we want to then stop when ready to stop.
+// Now we're going to make the letter converter into a method and use it to run the loop. Kinda changed it up a bit.
+// Making a super simple method just to get the idea. Can probably go back later to inprove it.
